@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DD Clothing Premium</title>
+<style>
+body{margin:0;font-family:sans-serif;background:#111;color:#fff}
+header,footer{text-align:center;padding:20px}
+.products{display:flex;flex-wrap:wrap;gap:20px;justify-content:center}
+.product{background:#222;padding:15px;border-radius:10px;width:250px}
+button{padding:10px;border:none;cursor:pointer}
+</style>
+</head>
+<body>
+<header><h1>DD Clothing Premium</h1></header>
+<section class="products">
+<div class="product"><h3>Kente</h3><button onclick="order('Kente')">Order</button></div>
+</section>
+<section>
+<h2>Custom Measurements</h2>
+<input placeholder="Chest"><input placeholder="Waist"><input placeholder="Length">
+<input type="file">
+<button onclick="send()">Submit</button>
+</section>
+<section>
+<h2>Cart</h2>
+<p>Cart system placeholder</p>
+</section>
+<section>
+<h2>Delivery Tracking</h2>
+<input placeholder="Tracking ID"><button>Track</button>
+</section>
+<footer>©2026</footer>
+<script>
+function order(i){window.open(`https://wa.me/233203512890?text=Order:${i}`)}
+function send(){window.open("https://wa.me/233203512890?text=Custom order details")}
+</script>
+</body>
+</html>
