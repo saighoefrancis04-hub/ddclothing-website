@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DD Clothing & Accessories</title>
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1600180758890-6b94519a8ba6');
+    background-size: cover;
+    color: white;
+}
+header {
+    text-align: center;
+    padding: 20px;
+}
+nav {
+    text-align: center;
+    padding: 10px;
+}
+nav a {
+    color: gold;
+    margin: 10px;
+    text-decoration: none;
+}
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+}
+.section {
+    padding: 40px 20px;
+}
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.product {
+    background: rgba(255,255,255,0.1);
+    padding: 20px;
+    border-radius: 12px;
+    width: 220px;
+}
+button {
+    background: gold;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+}
+</style>
+</head>
+<body>
+<header>
+<h1>DD Clothing & Accessories</h1>
+<p>Style Redefined, Confidence Reinvented</p>
+</header>
+<nav>
+<a href="#products">Products</a>
+<a href="#contact">Contact</a>
+</nav>
+<section class="hero">
+<h2>Authentic African Fashion</h2>
+<p>Celebrating culture with elegance and style</p>
+</section>
+<section id="products" class="section">
+<h2>Our Collection</h2>
+<div class="products">
+<div class="product"><h3>Kente Outfit</h3><p>Traditional elegance</p><button onclick="order()">Order on WhatsApp</button></div>
+<div class="product"><h3>Ankara Styles</h3><p>Modern African wear</p><button onclick="order()">Order on WhatsApp</button></div>
+<div class="product"><h3>Kaftan</h3><p>Comfort & class</p><button onclick="order()">Order on WhatsApp</button></div>
+</div>
+</section>
+<section id="contact" class="section">
+<h2>Contact Us</h2>
+<p>📞 0203512890 / 0246311129</p>
+<p>📧 ddclothingandaccessories01@gmail.com</p>
+</section>
+<footer>
+<p>© 2026 DD Clothing & Accessories</p>
+</footer>
+<script>
+function order() {
+    window.open("https://wa.me/233203512890", "_blank");
+}
+</script>
+</body>
+</html>
